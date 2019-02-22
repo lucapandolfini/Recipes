@@ -1,4 +1,4 @@
-##Poreplex0.4_Virtualenv
+## Poreplex0.4_Virtualenv
 Create a virtualised environment for Poreplex-0.4
 
 Download miniconda and create Miniconda environment:
