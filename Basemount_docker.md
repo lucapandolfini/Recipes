@@ -37,4 +37,5 @@ After usage, unmount:
 ```bash
 ##In container (root@7aba3edd1ddc):
 basemount --unmount /data/bm
+exit
 ```
