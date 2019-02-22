@@ -8,7 +8,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-Download miniconda and create new virtualenv:
+Create new virtualenv with spevific python version:
 ```bash
 conda create -n poreplex-0.4 python=3.6
 ```
