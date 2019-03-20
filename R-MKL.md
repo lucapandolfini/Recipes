@@ -152,6 +152,37 @@ $ ldd  ./bin/R
 	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f9ed3f7c000)
 
 ```
+In alternative, for shlib support:
+
+```bash
+$ ldd ./lib/libR.so 
+
+	linux-vdso.so.1 (0x00007ffd9ebdb000)
+	libmkl_gf_lp64.so => /opt/intel/compilers_and_libraries_2019.1.144/linux/mkl/lib/intel64_lin/libmkl_gf_lp64.so (0x00007f740cd1c000)
+	libmkl_gnu_thread.so => /opt/intel/compilers_and_libraries_2019.1.144/linux/mkl/lib/intel64_lin/libmkl_gnu_thread.so (0x00007f740b4c8000)
+	libmkl_core.so => /opt/intel/compilers_and_libraries_2019.1.144/linux/mkl/lib/intel64_lin/libmkl_core.so (0x00007f740733c000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f740731e000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f74072fd000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f7407178000)
+	libgfortran.so.5 => /usr/lib/x86_64-linux-gnu/libgfortran.so.5 (0x00007f7406f0b000)
+	libquadmath.so.0 => /usr/lib/x86_64-linux-gnu/libquadmath.so.0 (0x00007f7406eca000)
+	libreadline.so.7 => /lib/x86_64-linux-gnu/libreadline.so.7 (0x00007f7406c7d000)
+	libpcre.so.3 => /lib/x86_64-linux-gnu/libpcre.so.3 (0x00007f7406c09000)
+	liblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007f7406be1000)
+	libbz2.so.1.0 => /lib/x86_64-linux-gnu/libbz2.so.1.0 (0x00007f7406bcc000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f74069ae000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007f74069a4000)
+	libicuuc.so.63 => /usr/lib/x86_64-linux-gnu/libicuuc.so.63 (0x00007f74067d5000)
+	libicui18n.so.63 => /usr/lib/x86_64-linux-gnu/libicui18n.so.63 (0x00007f74064fa000)
+	libgomp.so.1 => /usr/lib/x86_64-linux-gnu/libgomp.so.1 (0x00007f74064c9000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7406306000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f740dce0000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f74062ec000)
+	libtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007f74062be000)
+	libicudata.so.63 => /usr/lib/x86_64-linux-gnu/libicudata.so.63 (0x00007f74048ce000)
+	libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f740474a000)
+
+```
 
 Install:
 
