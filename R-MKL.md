@@ -102,7 +102,7 @@ R is now configured for x86_64-pc-linux-gnu
   Interfaces supported:      X11
   External libraries:        readline, BLAS(MKL), LAPACK(in blas), curl
   Additional capabilities:   PNG, JPEG, TIFF, NLS, cairo, ICU
-  Options enabled:           R profiling
+  Options enabled:           R profiling (, shared R library)
 
   Capabilities skipped:      
   Options not enabled:       shared BLAS, memory profiling
