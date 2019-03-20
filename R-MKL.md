@@ -152,7 +152,7 @@ $ ldd  ./bin/R
 	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f9ed3f7c000)
 
 ```
-In alternative, for shlib support:
+In alternative, if R has been compiled as shlib:
 
 ```bash
 $ ldd ./lib/libR.so 
