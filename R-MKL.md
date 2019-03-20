@@ -76,7 +76,7 @@ $ source /opt/intel/mkl/bin/mklvars.sh intel64
 
 $ MKL="-Wl,--no-as-needed -lmkl_gf_lp64 -Wl,--start-group -lmkl_gnu_thread  -lmkl_core  -Wl,--end-group -fopenmp  -ldl -lpthread -lm"
 
-$ ./configure --with-blas="$MKL" --with-lapack
+$ ./configure --with-blas="$MKL" --with-lapack #For Rstudio Server: --enable-R-shlib
 
 ```
 
