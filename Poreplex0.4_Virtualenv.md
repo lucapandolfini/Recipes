@@ -35,10 +35,30 @@ Get kmer models:
 cd /home/lp471/bin/miniconda3/envs/poreplex-0.4/lib/python3.6/site-packages/poreplex/
 git clone https://github.com/nanoporetech/kmer_models.git
 ```
-Run poreplex:
+## Run poreplex
+
+Setup environment
 ```bash
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/lp471/bin/miniconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/lp471/bin/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/lp471/bin/miniconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/lp471/bin/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
 export POREPLEX_ENV=~/bin/miniconda3/envs/poreplex-0.4
 
+conda activate poreplex-0.4
+
+```
+Run poreplex command
+```bash
 poreplex -i raw/ -o demultiplexed/ --trim-adapter --barcoding --fast5 --basecall --parallel 14 --align $POREPLEX_ENV/minimap2_indexes/Homo_sapiens.GRCh38.90.mmidx --dashboard --contig-aliases $POREPLEX_ENV/minimap2_indexes/contigs_db.txt --live
 ```
 Deactivate the virtual environment:
